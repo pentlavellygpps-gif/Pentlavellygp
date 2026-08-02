@@ -4,210 +4,37 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>పెంట్లవెల్లి గ్రామపంచాయతీ | Pentlavelly Grama Panchayat</title>
+<title>పెంట్లవెల్లి గ్రామపంచాయతీ</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f5f5f5;
-color:#222;
-line-height:1.6;
-}
-
-header{
-background:#0b6b3a;
-color:#fff;
-padding:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-header img{
-width:80px;
-height:80px;
-}
-
-header h1{
-font-size:32px;
-}
-
-header p{
-font-size:16px;
-}
-
-nav{
-background:#006633;
-}
-
-nav ul{
-display:flex;
-justify-content:center;
-list-style:none;
-flex-wrap:wrap;
-}
-
-nav ul li{
-padding:15px 20px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav ul li:hover{
-background:#0a8d4d;
-}
-
-.hero{
-background:url("images/slider1.jpg") center center/cover no-repeat;
-height:420px;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h2{
-background:rgba(0,0,0,.5);
-padding:20px;
-border-radius:10px;
-color:white;
-font-size:40px;
-}
-
-.notice{
-background:#ffeb3b;
-padding:12px;
-font-weight:bold;
-}
-
-.notice marquee{
-color:red;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:40px 0;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.15);
-margin-bottom:25px;
-}
-
-.card h2{
-color:#0b6b3a;
-margin-bottom:15px;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-table th{
-background:#0b6b3a;
-color:white;
-padding:10px;
-}
-
-table td{
-border:1px solid #ccc;
-padding:10px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-footer{
-background:#0b6b3a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-}
-
-.hero{
-height:250px;
-}
-
-.hero h2{
-font-size:28px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
-<header>
+<header class="header">
 
-<img src="images/logo.png" alt="Logo">
-
-<div>
-
+<div class="logo">
 <h1>పెంట్లవెల్లి గ్రామపంచాయతీ</h1>
-
 <p>Pentlavelly Mandal | Nagarkurnool District | Telangana</p>
-
 </div>
 
 </header>
 
-<nav>
+<nav class="navbar">
 
-<ul>
+<a href="index.html">హోమ్</a>
 
-<li><a href="#">హోమ్</a></li>
+<a href="about.html">గ్రామం గురించి</a>
 
-<li><a href="#">గ్రామం గురించి</a></li>
+<a href="members.html">ప్రజాప్రతినిధులు</a>
 
-<li><a href="#">ప్రజాప్రతినిధులు</a></li>
+<a href="staff.html">సిబ్బంది</a>
 
-<li><a href="#">సిబ్బంది</a></li>
+<a href="gallery.html">గ్యాలరీ</a>
 
-<li><a href="#">సేవలు</a></li>
+<a href="schemes.html">పథకాలు</a>
 
-<li><a href="#">గ్యాలరీ</a></li>
-
-<li><a href="#">సంప్రదించండి</a></li>
-
-</ul>
+<a href="contact.html">సంప్రదించండి</a>
 
 </nav>
 
@@ -215,9 +42,13 @@ font-size:28px;
 
 <h2>పెంట్లవెల్లి గ్రామపంచాయతీకి స్వాగతం</h2>
 
+<p>
+ప్రజలకు పారదర్శకమైన సేవలు అందించడమే మా లక్ష్యం.
+</p>
+
 </section>
 
-<div class="notice">
+<section class="notice">
 
 <marquee>
 
@@ -225,165 +56,84 @@ font-size:28px;
 
 </marquee>
 
-</div>
+</section>
 
-<div class="container"><!-- స్వాగతం -->
-<div class="card">
+<section class="content">
+
 <h2>స్వాగతం</h2>
-<p>
-పెంట్లవెల్లి గ్రామపంచాయతీ అధికారిక వెబ్‌సైట్‌కు స్వాగతం.
-గ్రామ అభివృద్ధి, పారదర్శక పాలన మరియు ప్రజలకు నాణ్యమైన సేవలు అందించడమే మా లక్ష్యం.
-</p>
-</div>
 
-<!-- గ్రామం గురించి -->
-<div class="card">
+<p>
+
+పెంట్లవెల్లి గ్రామపంచాయతీ అధికారిక వెబ్‌సైట్‌కు స్వాగతం.
+
+ఈ వెబ్‌సైట్ ద్వారా గ్రామానికి సంబంధించిన ప్రకటనలు, ప్రభుత్వ పథకాలు, ప్రజాప్రతినిధులు, సిబ్బంది వివరాలు మరియు ఇతర సేవలను పొందవచ్చు.
+
+</p>
+
+</section><!-- గ్రామం గురించి -->
+<section class="content">
+
 <h2>గ్రామం గురించి</h2>
 
 <p>
-Pentlavelly Gram Panchayat, located in Pentlavelly Mandal,
-Nagarkurnool District, Telangana, is committed to building a
-clean, green, healthy and inclusive village.
+పెంట్లవెల్లి గ్రామపంచాయతీ నాగర్‌కర్నూల్ జిల్లా, పెంట్లవెల్లి మండలంలో ఉంది.
+గ్రామపంచాయతీ గ్రామ అభివృద్ధి, పరిశుభ్రత, తాగునీరు, వీధి దీపాలు,
+రోడ్లు, డ్రైనేజీ, విద్య, ఆరోగ్యం మరియు ప్రభుత్వ పథకాల అమలుకు
+కట్టుబడి పనిచేస్తోంది.
 </p>
 
-<p>
-గ్రామ జనాభా సుమారు <b>8,484</b>. గ్రామపంచాయతీ అభివృద్ధి ప్రణాళిక (GPDP)
-ద్వారా గ్రామాభివృద్ధి కార్యక్రమాలు అమలు చేయబడుతున్నాయి.
-</p>
-
-</div>
+</section>
 
 <!-- సర్పంచ్ సందేశం -->
-<div class="card">
+<section class="content">
 
 <h2>గౌరవ సర్పంచ్ సందేశం</h2>
 
-<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;">
-
-<div>
-
-<img src="images/sarpanch.jpg"
-style="width:180px;height:180px;border-radius:50%;border:4px solid #0b6b3a;">
-
-</div>
-
-<div style="flex:1;">
-
-<h3>శ్రీమతి చిట్టమ్మ గారు</h3>
-
 <p>
-
-గ్రామ ప్రజలకు మెరుగైన సేవలు అందించడం,
-పారదర్శక పాలన కొనసాగించడం,
-పరిశుభ్రమైన గ్రామంగా తీర్చిదిద్దడం,
-అభివృద్ధి కార్యక్రమాలను సమర్థవంతంగా అమలు చేయడం
-మా ప్రధాన లక్ష్యం.
-
+గ్రామ ప్రజలకు పారదర్శకమైన పాలన, మెరుగైన సేవలు మరియు
+సుస్థిర అభివృద్ధిని అందించేందుకు మేము నిరంతరం కృషి చేస్తున్నాము.
+గ్రామ ప్రజల సహకారంతో పెంట్లవెల్లిని ఆదర్శ గ్రామంగా తీర్చిదిద్దుదాం.
 </p>
 
-</div>
+<p><strong>– శ్రీమతి చిట్టమ్మ గారు, సర్పంచ్</strong></p>
 
-</div>
-
-</div>
-
-<!-- తాజా ప్రకటనలు -->
-
-<div class="card">
-
-<h2>📢 తాజా ప్రకటనలు</h2>
-
-<ul>
-
-<li>04-08-2026 ఉదయం 11:00 గంటలకు గ్రామసభ.</li>
-
-<li>ఇంటి పన్నులు చెల్లించవలెను.</li>
-
-<li>ప్రభుత్వ పథకాల దరఖాస్తులు స్వీకరించబడుతున్నాయి.</li>
-
-</ul>
-
-</div>
+</section>
 
 <!-- సేవలు -->
-
-<div class="card">
+<section class="content">
 
 <h2>గ్రామపంచాయతీ సేవలు</h2>
 
 <ul>
-
 <li>✅ జనన నమోదు</li>
-
 <li>✅ మరణ నమోదు</li>
-
 <li>✅ ఇంటి పన్ను వివరాలు</li>
-
-<li>✅ ఫిర్యాదు నమోదు</li>
-
-<li>✅ ప్రభుత్వ పథకాల సమాచారం</li>
-
 <li>✅ తాగునీటి సేవలు</li>
-
+<li>✅ వీధి దీపాల నిర్వహణ</li>
+<li>✅ ఫిర్యాదు నమోదు</li>
+<li>✅ ప్రభుత్వ పథకాల సమాచారం</li>
 </ul>
 
-</div>
+</section>
 
-<!-- గణాంకాలు -->
+<!-- తాజా ప్రకటనలు -->
+<section class="content">
 
-<div class="card">
+<h2>తాజా ప్రకటనలు</h2>
 
-<h2>గ్రామ గణాంకాలు</h2>
+<ul>
+<li>📢 04-08-2026 ఉదయం 11:00 గంటలకు గ్రామసభ.</li>
+<li>📢 ఇంటి పన్నులు సకాలంలో చెల్లించండి.</li>
+<li>📢 ప్రభుత్వ సంక్షేమ పథకాల కోసం గ్రామపంచాయతీని సంప్రదించండి.</li>
+</ul>
 
-<table>
+</section><!-- ప్రజాప్రతినిధులు -->
+<section class="content">
 
-<tr>
-
-<th>వివరం</th>
-
-<th>సంఖ్య</th>
-
-</tr>
-
-<tr>
-
-<td>జనాభా</td>
-
-<td>8,484</td>
-
-</tr>
-
-<tr>
-
-<td>ఇళ్ల సంఖ్య</td>
-
-<td>2,637</td>
-
-</tr>
-
-<tr>
-
-<td>వార్డులు</td>
-
-<td>14</td>
-
-</tr>
-
-<tr>
-
-<td>గ్రామ అభివృద్ధి లక్ష్యం</td>
-
-<td>100%</td>
-
-</tr>
-
-</table>
-
-</div><!-- ప్రజాప్రతినిధులు -->
-<div class="card">
 <h2>ప్రజాప్రతినిధులు</h2>
 
-<table>
+<table border="1" width="100%" cellpadding="10">
+
 <tr>
 <th>హోదా</th>
 <th>పేరు</th>
@@ -406,15 +156,14 @@ style="width:180px;height:180px;border-radius:50%;border:4px solid #0b6b3a;">
 
 </table>
 
-</div>
+</section>
 
-<!-- ఉద్యోగులు -->
-
-<div class="card">
+<!-- గ్రామపంచాయతీ ఉద్యోగులు -->
+<section class="content">
 
 <h2>గ్రామపంచాయతీ ఉద్యోగులు</h2>
 
-<table>
+<table border="1" width="100%" cellpadding="10">
 
 <tr>
 <th>హోదా</th>
@@ -438,15 +187,14 @@ style="width:180px;height:180px;border-radius:50%;border:4px solid #0b6b3a;">
 
 </table>
 
-</div>
+</section>
 
 <!-- సిబ్బంది -->
-
-<div class="card">
+<section class="content">
 
 <h2>గ్రామపంచాయతీ సిబ్బంది</h2>
 
-<table>
+<table border="1" width="100%" cellpadding="10">
 
 <tr>
 <th>హోదా</th>
@@ -465,72 +213,28 @@ style="width:180px;height:180px;border-radius:50%;border:4px solid #0b6b3a;">
 
 </table>
 
-</div>
-
-<!-- ఫోటో గ్యాలరీ -->
-
-<div class="card">
-
-<h2>📸 ఫోటో గ్యాలరీ</h2>
-
-<div class="gallery">
-
-<img src="images/gallery1.jpg" alt="">
-<img src="images/gallery2.jpg" alt="">
-<img src="images/gallery3.jpg" alt="">
-<img src="images/gallery4.jpg" alt="">
-
-</div>
-
-</div>
-
-<!-- Google Map -->
-
-<div class="card">
-
-<h2>📍 గ్రామ స్థానం</h2>
-
-<iframe
-src="https://www.google.com/maps/embed?pb="
-width="100%"
-height="350"
-style="border:0;border-radius:10px;"
-loading="lazy">
-</iframe>
-
-</div>
+</section>
 
 <!-- సంప్రదించండి -->
+<section class="content">
 
-<div class="card">
+<h2>సంప్రదించండి</h2>
 
-<h2>📞 సంప్రదించండి</h2>
-
-<p><b>పెంట్లవెల్లి గ్రామపంచాయతీ</b></p>
+<p><strong>పెంట్లవెల్లి గ్రామపంచాయతీ</strong></p>
 
 <p>పెంట్లవెల్లి మండలం, నాగర్‌కర్నూల్ జిల్లా, తెలంగాణ</p>
 
-<p>📞 Phone : +91-XXXXXXXXXX</p>
+<p>📞 Phone: +91-XXXXXXXXXX</p>
 
-<p>✉️ Email : gp.pentlavelly@gmail.com</p>
+<p>✉️ Email: gp.pentlavelly@gmail.com</p>
 
-<p>🕘 కార్యాలయ సమయం : ఉదయం 10:30 AM - సాయంత్రం 5:00 PM</p>
-
-</div>
-
-</div>
+</section>
 
 <footer>
-
-<h2>పెంట్లవెల్లి గ్రామపంచాయతీ</h2>
-
-<p>ప్రజలకు మెరుగైన సేవలు అందించడమే మా లక్ష్యం.</p>
-
-<hr>
 
 <p>© 2026 Pentlavelly Grama Panchayat. All Rights Reserved.</p>
 
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
