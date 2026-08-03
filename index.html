@@ -201,7 +201,70 @@ emailjs.init({
     publicKey: "K88B2tM4udI9p2zr7",
 });
 </script>
+<section class="content" id="birth">
 
+<h2>👶 జనన నమోదు కోసం దరఖాస్తు</h2>
+
+<form id="birthForm">
+
+<label>శిశువు పేరు</label><br>
+<input type="text" id="child_name" required><br><br>
+
+<label>జనన తేదీ</label><br>
+<input type="date" id="dob" required><br><br>
+
+<label>తండ్రి పేరు</label><br>
+<input type="text" id="father_name" required><br><br>
+
+<label>తల్లి పేరు</label><br>
+<input type="text" id="mother_name" required><br><br>
+
+<label>మొబైల్ నంబర్</label><br>
+<input type="tel" id="birth_mobile" required><br><br>
+
+<label>పూర్తి చిరునామా</label><br>
+<textarea id="address" rows="4" required></textarea><br><br>
+
+<button type="submit">జనన నమోదు దరఖాస్తు పంపండి</button>
+
+</form>
+
+<p id="birthStatus"></p>
+<section class="content" id="death">
+
+<h2>⚫ మరణ నమోదు కోసం దరఖాస్తు</h2>
+
+<form id="deathForm">
+
+<label>మరణించిన వ్యక్తి పేరు</label><br>
+<input type="text" id="deceased_name" required><br><br>
+
+<label>మరణ తేదీ</label><br>
+<input type="date" id="death_date" required><br><br>
+
+<label>తండ్రి / భర్త పేరు</label><br>
+<input type="text" id="guardian_name" required><br><br>
+
+<label>వయస్సు</label><br>
+<input type="number" id="age" required><br><br>
+
+<label>మొబైల్ నంబర్</label><br>
+<input type="tel" id="death_mobile" required><br><br>
+
+<label>పూర్తి చిరునామా</label><br>
+<textarea id="death_address" rows="4" required></textarea><br><br>
+
+<label>మరణానికి కారణం</label><br>
+<textarea id="reason" rows="3"></textarea><br><br>
+
+<button type="submit">మరణ నమోదు దరఖాస్తు పంపండి</button>
+
+</form>
+
+<p id="deathStatus"></p>
+
+</section>
+</section>
 <script src="script.js"></script><!-- సంప్రదింపు వివరాలు -->
 <section class="content" id="contact">
 
