@@ -278,5 +278,57 @@ window.onload = function () {
 
 </footer>
 <script src="script.js"></script>
-</body>
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+  publicKey: "K88B2tM4udI9p2zr7",
+});
+</script>
+
+<section class="card" id="complaint">
+<h2>📝 ఫిర్యాదు నమోదు</h2>
+
+<form id="complaintForm">
+
+<label>పూర్తి పేరు</label>
+<input type="text" id="name" required>
+
+<label>మొబైల్ నంబర్</label>
+<input type="tel" id="mobile" required>
+
+<label>వార్డు నంబర్</label>
+<select id="ward" required>
+<option value="">ఎంచుకోండి</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+</select>
+
+<label>ఫిర్యాదు విషయం</label>
+<input type="text" id="subject" required>
+
+<label>ఫిర్యాదు వివరాలు</label>
+<textarea id="message" rows="5" required></textarea>
+
+<button type="submit">ఫిర్యాదు పంపండి</button>
+
+</form>
+
+<p id="status"></p>
+</section>
+
+<script src="script.js"></script></body>
 </html>
