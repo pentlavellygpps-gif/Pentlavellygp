@@ -43,10 +43,10 @@ document.getElementById("complaintForm").addEventListener("submit", function (e)
 
         document.getElementById("complaintForm").reset();
     })
-    .catch(function (error) {
-        document.getElementById("status").innerHTML =
-            "❌ ఫిర్యాదు పంపడంలో లోపం జరిగింది. మళ్లీ ప్రయత్నించండి.";
+.catch(function (error) {
+    console.log("EmailJS Error:", error);
 
-        console.log(error);
-    });
+    document.getElementById("status").innerHTML =
+        "❌ Error: " + JSON.stringify(error);
 });
+        
