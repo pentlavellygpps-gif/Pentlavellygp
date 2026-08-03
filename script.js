@@ -49,4 +49,59 @@ document.getElementById("complaintForm").addEventListener("submit", function (e)
     document.getElementById("status").innerHTML =
         "❌ Error: " + JSON.stringify(error);
 });
-        
+// జనన నమోదు
+document.getElementById("birthForm")?.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const params = {
+        child_name: document.getElementById("child_name").value,
+        dob: document.getElementById("dob").value,
+        father_name: document.getElementById("father_name").value,
+        mother_name: document.getElementById("mother_name").value,
+        mobile: document.getElementById("birth_mobile").value,
+        address: document.getElementById("address").value
+    };
+
+    emailjs.send(
+        "service_v8bnap4",
+        "YOUR_BIRTH_TEMPLATE_ID",
+        params
+    ).then(function () {
+        document.getElementById("birthStatus").innerHTML =
+            "✅ జనన నమోదు దరఖాస్తు విజయవంతంగా పంపబడింది.";
+        document.getElementById("birthForm").reset();
+    }).catch(function (error) {
+        document.getElementById("birthStatus").innerHTML =
+            "❌ దరఖాస్తు పంపడంలో లోపం జరిగింది.";
+        console.log(error);
+    });
+});
+
+// మరణ నమోదు
+document.getElementById("deathForm")?.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const params = {
+        deceased_name: document.getElementById("deceased_name").value,
+        death_date: document.getElementById("death_date").value,
+        guardian_name: document.getElementById("guardian_name").value,
+        age: document.getElementById("age").value,
+        mobile: document.getElementById("death_mobile").value,
+        address: document.getElementById("death_address").value,
+        reason: document.getElementById("reason").value
+    };
+
+    emailjs.send(
+        "service_v8bnap4",
+        "YOUR_DEATH_TEMPLATE_ID",
+        params
+    ).then(function () {
+        document.getElementById("deathStatus").innerHTML =
+            "✅ మరణ నమోదు దరఖాస్తు విజయవంతంగా పంపబడింది.";
+        document.getElementById("deathForm").reset();
+    }).catch(function (error) {
+        document.getElementById("deathStatus").innerHTML =
+            "❌ దరఖాస్తు పంపడంలో లోపం జరిగింది.";
+        console.log(error);
+    });
+});        
