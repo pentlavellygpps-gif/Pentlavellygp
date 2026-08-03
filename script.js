@@ -64,7 +64,7 @@ document.getElementById("birthForm")?.addEventListener("submit", function (e) {
 
     emailjs.send(
         "service_v8bnap4",
-        "YOUR_BIRTH_TEMPLATE_ID",
+        "template_2xnub3q"
         params
     ).then(function () {
         document.getElementById("birthStatus").innerHTML =
