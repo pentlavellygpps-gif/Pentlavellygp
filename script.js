@@ -21,3 +21,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.getElementById("complaintForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const params = {
+        name: document.getElementById("name").value,
+        mobile: document.getElementById("mobile").value,
+        ward: document.getElementById("ward").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send(
+        "service_v8bnap4",
+        "template_cro5pd6",
+        params
+    )
+    .then(function () {
+        document.getElementById("status").innerHTML =
+            "✅ మీ ఫిర్యాదు విజయవంతంగా పంపబడింది.";
+
+        document.getElementById("complaintForm").reset();
+    })
+    .catch(function (error) {
+        document.getElementById("status").innerHTML =
+            "❌ ఫిర్యాదు పంపడంలో లోపం జరిగింది. మళ్లీ ప్రయత్నించండి.";
+
+        console.log(error);
+    });
+});
