@@ -7,298 +7,160 @@
 <title>పెంట్లవెల్లి గ్రామపంచాయతీ</title>
 
 <link rel="stylesheet" href="style.css">
+</head>
 
-</head><script>
-const year = document.getElementById("year");
-if (year) {
-    year.textContent = new Date().getFullYear();
-}
-
-window.onload = function () {
-    console.log("Pentlavelly Grama Panchayat Website Loaded Successfully");
-};
-</script>
-</body>
-
+<body>
 
 <header class="header">
-
-<div class="logo">
-<h1>పెంట్లవెల్లి గ్రామపంచాయతీ</h1>
-<p>Pentlavelly Mandal | Nagarkurnool District | Telangana</p>
-</div>
-
+    <div class="logo">
+        <h1>పెంట్లవెల్లి గ్రామపంచాయతీ</h1>
+        <p>Pentlavelly Mandal | Nagarkurnool District | Telangana</p>
+    </div>
 </header>
 
 <nav class="navbar">
+    <a href="#home">హోమ్</a>
+    <a href="#about">గ్రామం గురించి</a>
+    <a href="#members">ప్రజాప్రతినిధులు</a>
+    <a href="#staff">సిబ్బంది</a>
+    <a href="#gallery">గ్యాలరీ</a>
+    <a href="#services">సేవలు</a>
+    <a href="#complaint">ఫిర్యాదు</a>
+    <a href="#contact">సంప్రదించండి</a>
+</nav>
 
-<a href="index.html">హోమ్</a>
+<section class="hero" id="home">
+    <h2>పెంట్లవెల్లి గ్రామపంచాయతీకి స్వాగతం</h2>
+    <p>
+        ప్రజలకు పారదర్శకమైన సేవలు అందించడమే మా లక్ష్యం.
+    </p>
+</section>
 
-<a href="about.html">గ్రామం గురించి</a>
+<section class="notice">
+    <marquee>
+        📢 04-08-2026 ఉదయం 11:00 గంటలకు గ్రామసభ నిర్వహించబడును. గ్రామ ప్రజలందరూ తప్పనిసరిగా హాజరు కావాలి.
+    </marquee>
+</section>
 
-<a href="members.html">ప్రజాప్రతినిధులు</a><section class="card">
-<h2>ప్రజాప్రతినిధుల వివరాలు</h2>
+<section class="content" id="about">
+    <h2>గ్రామం గురించి</h2>
 
-<table border="1" width="100%" cellpadding="8" cellspacing="0">
+    <p>
+        పెంట్లవెల్లి గ్రామపంచాయతీ నాగర్‌కర్నూల్ జిల్లా,
+        పెంట్లవెల్లి మండలంలో ఉంది.
+        గ్రామ అభివృద్ధి, పరిశుభ్రత, తాగునీరు,
+        వీధి దీపాలు, రోడ్లు, డ్రైనేజీ,
+        ప్రభుత్వ సంక్షేమ పథకాల అమలు
+        మా గ్రామపంచాయతీ ప్రధాన లక్ష్యం.
+    </p>
+</section>
+
+<section class="content">
+    <h2>గౌరవ సర్పంచ్ సందేశం</h2>
+
+    <p>
+        గ్రామ ప్రజలకు మెరుగైన సేవలు అందించడం,
+        పారదర్శక పాలన అందించడం,
+        ప్రతి కుటుంబ అభివృద్ధికి కృషి చేయడం
+        మా బాధ్యత.
+    </p>
+
+    <h3>
+        శ్రీమతి మార్వాకుల చిట్టెమ్మ గారు<br>
+        (సర్పంచ్)
+    </h3>
+</section><!-- ప్రజాప్రతినిధులు -->
+<section class="content" id="members">
+
+<h2>ప్రజాప్రతినిధులు</h2>
+
+<table border="1" width="100%" cellpadding="8">
 <tr style="background:#0b6b3a;color:white;">
 <th>క్రమ సంఖ్య</th>
 <th>వార్డు / పదవి</th>
 <th>పేరు</th>
-<th>పదవి</th>
+<th>హోదా</th>
 </tr>
 
 <tr><td>1</td><td>సర్పంచ్</td><td>శ్రీమతి మార్వాకుల చిట్టెమ్మ గారు</td><td>సర్పంచ్</td></tr>
 <tr><td>2</td><td>ఉప సర్పంచ్</td><td>శ్రీమతి బి. సంధ్యారాణి గారు</td><td>ఉప సర్పంచ్</td></tr>
 
-
+<tr><td>3</td><td>1వ వార్డు</td><td>శ్రీమతి డ్యారంగుల సరస్వతి గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>4</td><td>2వ వార్డు</td><td>శ్రీమతి పానుగంటి సునీత గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>5</td><td>3వ వార్డు</td><td>శ్రీమతి ఎమ్. కరుణ శ్రీ గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>6</td><td>5వ వార్డు</td><td>శ్రీ తుపాకుల సురేష్ గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>7</td><td>6వ వార్డు</td><td>శ్రీ బత్తిని రాజు గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>8</td><td>7వ వార్డు</td><td>శ్రీ కె. శశి గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>9</td><td>8వ వార్డు</td><td>శ్రీమతి బి. చిట్టెమ్మ గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>10</td><td>9వ వార్డు</td><td>శ్రీ గోవు రాజు గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>11</td><td>10వ వార్డు</td><td>శ్రీ ఎం.డి. ఖలీల్ గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>12</td><td>11వ వార్డు</td><td>శ్రీ సయ్యద్ పాషా గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>13</td><td>12వ వార్డు</td><td>శ్రీ ఎండి పాషా గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>14</td><td>13వ వార్డు</td><td>శ్రీ కె. కురుమూర్తి గారు</td><td>వార్డు సభ్యులు</td></tr>
+<tr><td>15</td><td>14వ వార్డు</td><td>శ్రీమతి బోడ శ్రీలత గారు</td><td>వార్డు సభ్యులు</td></tr>
 
 </table>
+
 </section>
 
-<a href="staff.html">సిబ్బంది</a>
+<!-- ఉద్యోగులు -->
+<section class="content" id="staff">
+<h2>గ్రామపంచాయతీ ఉద్యోగులు</h2>
 
-<a href="gallery.html">గ్యాలరీ</a><div class="gallery">
-  <img src="images/photo1.jpg" alt="Photo 1">
-  <img src="images/photo2.jpg" alt="Photo 2">
+<table border="1" width="100%" cellpadding="8">
+<tr>
+<th>హోదా</th>
+<th>పేరు</th>
+</tr>
+
+<tr><td>పంచాయతీ కార్యదర్శి</td><td>........................</td></tr>
+<tr><td>బిల్ కలెక్టర్</td><td>........................</td></tr>
+<tr><td>కంప్యూటర్ ఆపరేటర్</td><td>........................</td></tr>
+
+</table>
+
+</section>
+
+<!-- ఫోటో గ్యాలరీ -->
+<section class="content" id="gallery">
+
+<h2>ఫోటో గ్యాలరీ</h2>
+
+<div class="gallery">
+<img src="images/photo1.jpg" alt="Photo 1">
+<img src="images/photo2.jpg" alt="Photo 2">
+<img src="images/photo3.jpg" alt="Photo 3">
+<img src="images/photo4.jpg" alt="Photo 4">
 </div>
 
-<a href="schemes.html">పథకాలు</a>
-
-<a href="contact.html">సంప్రదించండి</a>
-
-</nav>
-
-<section class="hero">
-
-<h2>పెంట్లవెల్లి గ్రామపంచాయతీకి స్వాగతం</h2>
-
-<p>
-ప్రజలకు పారదర్శకమైన సేవలు అందించడమే మా లక్ష్యం.
-</p>
-
-</section>
-
-<section class="notice">
-
-<marquee>
-
-📢 04-08-2026 ఉదయం 11:00 గంటలకు గ్రామసభ నిర్వహించబడును. గ్రామ ప్రజలందరూ తప్పనిసరిగా హాజరు కావాలి.
-
-</marquee>
-
-</section>
-
-<section class="content">
-
-<h2>స్వాగతం</h2>
-
-<p>
-
-పెంట్లవెల్లి గ్రామపంచాయతీ అధికారిక వెబ్‌సైట్‌కు స్వాగతం.
-
-ఈ వెబ్‌సైట్ ద్వారా గ్రామానికి సంబంధించిన ప్రకటనలు, ప్రభుత్వ పథకాలు, ప్రజాప్రతినిధులు, సిబ్బంది వివరాలు మరియు ఇతర సేవలను పొందవచ్చు.
-
-</p>
-
-</section><!-- గ్రామం గురించి -->
-<section class="content">
-
-<h2>గ్రామం గురించి</h2>
-
-<p>
-పెంట్లవెల్లి గ్రామపంచాయతీ నాగర్‌కర్నూల్ జిల్లా, పెంట్లవెల్లి మండలంలో ఉంది.
-గ్రామపంచాయతీ గ్రామ అభివృద్ధి, పరిశుభ్రత, తాగునీరు, వీధి దీపాలు,
-రోడ్లు, డ్రైనేజీ, విద్య, ఆరోగ్యం మరియు ప్రభుత్వ పథకాల అమలుకు
-కట్టుబడి పనిచేస్తోంది.
-</p>
-
-</section>
-
-<!-- సర్పంచ్ సందేశం -->
-<section class="content">
-
-<h2>గౌరవ సర్పంచ్ సందేశం</h2>
-
-<p>
-గ్రామ ప్రజలకు పారదర్శకమైన పాలన, మెరుగైన సేవలు మరియు
-సుస్థిర అభివృద్ధిని అందించేందుకు మేము నిరంతరం కృషి చేస్తున్నాము.
-గ్రామ ప్రజల సహకారంతో పెంట్లవెల్లిని ఆదర్శ గ్రామంగా తీర్చిదిద్దుదాం.
-</p>
-
-<p><strong>– శ్రీమతి చిట్టమ్మ గారు, సర్పంచ్</strong></p>
-
-</section>
-
-<!-- సేవలు -->
-<section class="content">
-
+</section><!-- గ్రామపంచాయతీ సేవలు -->
+<section class="content" id="services">
 <h2>గ్రామపంచాయతీ సేవలు</h2>
 
 <ul>
 <li>✅ జనన నమోదు</li>
 <li>✅ మరణ నమోదు</li>
-<li>✅ ఇంటి పన్ను వివరాలు</li>
+<li>✅ ఇంటి పన్ను సేవలు</li>
 <li>✅ తాగునీటి సేవలు</li>
 <li>✅ వీధి దీపాల నిర్వహణ</li>
 <li>✅ ఫిర్యాదు నమోదు</li>
 <li>✅ ప్రభుత్వ పథకాల సమాచారం</li>
 </ul>
-
 </section>
 
-<!-- తాజా ప్రకటనలు -->
-<section class="content">
-
-<h2>తాజా ప్రకటనలు</h2>
-
-<ul>
-<li>📢 04-08-2026 ఉదయం 11:00 గంటలకు గ్రామసభ.</li>
-<li>📢 ఇంటి పన్నులు సకాలంలో చెల్లించండి.</li>
-<li>📢 ప్రభుత్వ సంక్షేమ పథకాల కోసం గ్రామపంచాయతీని సంప్రదించండి.</li>
-</ul>
-
-</section><!-- ప్రజాప్రతినిధులు -->
-<section class="content">
-
-<h2>ప్రజాప్రతినిధులు</h2>
-
-<table border="1" width="100%" cellpadding="10">
-
-<tr>
-<th>హోదా</th>
-<th>పేరు</th>
-</tr>
-
-<tr>
-<td>సర్పంచ్</td>
-<td>శ్రీమతి చిట్టమ్మ గారు</td>
-</tr>
-
-<tr>
-<td>ఉపసర్పంచ్</td>
-<td>శ్రీమతి బి.సంధ్యారాణి గారు</td>
-</tr>
-
-<tr>
-<td>వార్డు సభ్యులు</td>
-<tr><td>3</td><td>1వ వార్డు</td><td>శ్రీమతి డ్యారంగుల సరస్వతి గారు</td><td>సభ్యులు</td></tr>
-<tr><td>4</td><td>2వ వార్డు</td><td>శ్రీమతి పానుగంటి సునీత గారు</td><td>సభ్యులు</td></tr>
-<tr><td>5</td><td>3వ వార్డు</td><td>శ్రీమతి ఎమ్. కరుణ శ్రీ గారు</td><td>సభ్యులు</td></tr>
-<tr><td>6</td><td>5వ వార్డు</td><td>శ్రీ తుపాకుల సురేష్ గారు</td><td>సభ్యులు</td></tr>
-<tr><td>7</td><td>6వ వార్డు</td><td>శ్రీ బత్తిని రాజు గారు</td><td>సభ్యులు</td></tr>
-<tr><td>8</td><td>7వ వార్డు</td><td>శ్రీ కె. శశి గారు</td><td>సభ్యులు</td></tr>
-<tr><td>9</td><td>8వ వార్డు</td><td>శ్రీమతి బి. చిట్టెమ్మ గారు</td><td>సభ్యులు</td></tr>
-<tr><td>10</td><td>9వ వార్డు</td><td>శ్రీ గోవు రాజు గారు</td><td>సభ్యులు</td></tr>
-<tr><td>11</td><td>10వ వార్డు</td><td>శ్రీ ఎం.డి. ఖలీల్ గారు</td><td>సభ్యులు</td></tr>
-<tr><td>12</td><td>11వ వార్డు</td><td>శ్రీ సయ్యద్ పాషా గారు</td><td>సభ్యులు</td></tr>
-<tr><td>13</td><td>12వ వార్డు</td><td>శ్రీ ఎండి పాషా గారు</td><td>సభ్యులు</td></tr>
-<tr><td>14</td><td>13వ వార్డు</td><td>శ్రీ కె. కురుమూర్తి గారు</td><td>సభ్యులు</td></tr>
-<tr><td>15</td><td>14వ వార్డు</td><td>శ్రీమతి బోడ శ్రీలత గారు</td><td>సభ్యులు</td></tr>
-</tr>
-
-</table>
-
-</section>
-
-<!-- గ్రామపంచాయతీ ఉద్యోగులు -->
-<section class="content">
-
-<h2>గ్రామపంచాయతీ ఉద్యోగులు</h2>
-
-<table border="1" width="100%" cellpadding="10">
-
-<tr>
-<th>హోదా</th>
-<th>పేరు</th>
-</tr>
-
-<tr>
-<td>పంచాయతీ కార్యదర్శి</td>
-<td>........................</td>
-</tr>
-
-<tr>
-<td>బిల్ కలెక్టర్</td>
-<td>........................</td>
-</tr>
-
-<tr>
-<td>కంప్యూటర్ ఆపరేటర్</td>
-<td>........................</td>
-</tr>
-
-</table>
-
-</section>
-
-<!-- సిబ్బంది -->
-<section class="content">
-
-<h2>గ్రామపంచాయతీ సిబ్బంది</h2>
-
-<table border="1" width="100%" cellpadding="10">
-
-<tr>
-<th>హోదా</th>
-<th>పేరు</th>
-</tr>
-
-<tr>
-<td>పారిశుద్ధ్య కార్మికుడు</td>
-<td>........................</td>
-</tr>
-
-<tr>
-<td>ఇతర సిబ్బంది</td>
-<td>........................</td>
-</tr>
-
-</table>
-
-</section>
-
-<!-- సంప్రదించండి -->
-<section class="content">
-
-<h2>సంప్రదించండి</h2>
-
-<p><strong>పెంట్లవెల్లి గ్రామపంచాయతీ</strong></p>
-
-<p>పెంట్లవెల్లి మండలం, నాగర్‌కర్నూల్ జిల్లా, తెలంగాణ</p>
-
-<p>📞 Phone: +91-XXXXXXXXXX</p>
-
-<p>✉️ Email: gp.pentlavelly@gmail.com</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Pentlavelly Grama Panchayat. All Rights Reserved.</p>
-
-</footer>
-<script src="script.js"></script>
-<!-- EmailJS Library -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script>
-emailjs.init({
-  publicKey: "K88B2tM4udI9p2zr7",
-});
-</script>
-
-<section class="card" id="complaint">
-<h2>📝 ఫిర్యాదు నమోదు</h2>
+<!-- ఫిర్యాదు నమోదు -->
+<section class="content" id="complaint">
+<h2>📝 ఆన్‌లైన్ ఫిర్యాదు నమోదు</h2>
 
 <form id="complaintForm">
 
-<label>పూర్తి పేరు</label>
-<input type="text" id="name" required>
+<label>పూర్తి పేరు</label><br>
+<input type="text" id="name" required><br><br>
 
-<label>మొబైల్ నంబర్</label>
-<input type="tel" id="mobile" required>
+<label>మొబైల్ నంబర్</label><br>
+<input type="tel" id="mobile" required><br><br>
 
-<label>వార్డు నంబర్</label>
+<label>వార్డు నంబర్</label><br>
 <select id="ward" required>
 <option value="">ఎంచుకోండి</option>
 <option>1</option>
@@ -315,20 +177,56 @@ emailjs.init({
 <option>12</option>
 <option>13</option>
 <option>14</option>
-</select>
+</select><br><br>
 
-<label>ఫిర్యాదు విషయం</label>
-<input type="text" id="subject" required>
+<label>ఫిర్యాదు విషయం</label><br>
+<input type="text" id="subject" required><br><br>
 
-<label>ఫిర్యాదు వివరాలు</label>
-<textarea id="message" rows="5" required></textarea>
+<label>ఫిర్యాదు వివరాలు</label><br>
+<textarea id="message" rows="5" required></textarea><br><br>
 
 <button type="submit">ఫిర్యాదు పంపండి</button>
 
 </form>
 
 <p id="status"></p>
+
 </section>
 
-<script src="script.js"></script></body>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "K88B2tM4udI9p2zr7",
+});
+</script>
+
+<script src="script.js"></script><!-- సంప్రదింపు వివరాలు -->
+<section class="content" id="contact">
+
+<h2>సంప్రదించండి</h2>
+
+<p><strong>పెంట్లవెల్లి గ్రామపంచాయతీ</strong></p>
+
+<p>పెంట్లవెల్లి మండలం, నాగర్‌కర్నూల్ జిల్లా, తెలంగాణ</p>
+
+<p>📞 ఫోన్: +91-XXXXXXXXXX</p>
+
+<p>📧 Email: pentlavellygpps@gmail.com</p>
+
+</section>
+
+<footer>
+<p>
+© <span id="year"></span> Pentlavelly Grama Panchayat.
+All Rights Reserved.
+</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
 </html>
