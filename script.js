@@ -1,107 +1,277 @@
-// Pentlavelly Grama Panchayat Website
+// ==========================================
+// PENTLAVELLY GRAMA PANCHAYAT
+// script.js
+// ==========================================
 
-// Footer లో సంవత్సరం ఆటోమేటిక్‌గా చూపించడానికి
-const year = document.getElementById("year");
-if (year) {
-    year.textContent = new Date().getFullYear();
+
+// ------------------------------------------
+// 1. FOOTER YEAR
+// ------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const year = document.getElementById("year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+});
+
+
+// ------------------------------------------
+// 2. COMPLAINT FORM
+// ------------------------------------------
+
+const complaintForm = document.getElementById("complaintForm");
+
+if (complaintForm) {
+
+    complaintForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const status = document.getElementById("status");
+
+        const templateParams = {
+
+            name: document.getElementById("name").value,
+
+            mobile: document.getElementById("mobile").value,
+
+            ward: document.getElementById("ward").value,
+
+            subject: document.getElementById("subject").value,
+
+            message: document.getElementById("message").value
+
+        };
+
+
+        status.textContent =
+            "ఫిర్యాదు పంపబడుతోంది...";
+
+
+        emailjs.send(
+
+            "service_v8bnap4",
+
+            "template_2xnub3q",
+
+            templateParams
+
+        )
+
+        .then(function () {
+
+            status.textContent =
+                "✅ మీ ఫిర్యాదు విజయవంతంగా పంపబడింది.";
+
+            complaintForm.reset();
+
+        })
+
+        .catch(function (error) {
+
+            console.error("Complaint Error:", error);
+
+            status.textContent =
+                "❌ ఫిర్యాదు పంపడంలో సమస్య వచ్చింది. దయచేసి మళ్లీ ప్రయత్నించండి.";
+
+        });
+
+    });
+
 }
 
-// Website Loaded Message
-window.onload = function () {
-    console.log("Pentlavelly Grama Panchayat Website Loaded Successfully!");
-};
 
-// Photo Gallery Image Click
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll(".gallery img");
+// ------------------------------------------
+// 3. BIRTH REGISTRATION FORM
+// ------------------------------------------
 
-    images.forEach(function (img) {
-        img.addEventListener("click", function () {
-            window.open(this.src, "_blank");
+const birthForm = document.getElementById("birthForm");
+
+if (birthForm) {
+
+    birthForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const status =
+            document.getElementById("birthStatus");
+
+
+        const templateParams = {
+
+            child_name:
+                document.getElementById("child_name").value,
+
+            dob:
+                document.getElementById("dob").value,
+
+            father_name:
+                document.getElementById("father_name").value,
+
+            mother_name:
+                document.getElementById("mother_name").value,
+
+            birth_mobile:
+                document.getElementById("birth_mobile").value,
+
+            address:
+                document.getElementById("address").value
+
+        };
+
+
+        status.textContent =
+            "జనన నమోదు దరఖాస్తు పంపబడుతోంది...";
+
+
+        emailjs.send(
+
+            "service_v8bnap4",
+
+            "template_cro5pd6",
+
+            templateParams
+
+        )
+
+        .then(function () {
+
+            status.textContent =
+                "✅ జనన నమోదు దరఖాస్తు విజయవంతంగా పంపబడింది.";
+
+            birthForm.reset();
+
+        })
+
+        .catch(function (error) {
+
+            console.error("Birth Registration Error:", error);
+
+            status.textContent =
+                "❌ జనన నమోదు దరఖాస్తు పంపడంలో సమస్య వచ్చింది.";
+
         });
+
     });
-});
-document.getElementById("complaintForm").addEventListener("submit", function (e) {
-    e.preventDefault();
 
-    const params = {
-        name: document.getElementById("name").value,
-        mobile: document.getElementById("mobile").value,
-        ward: document.getElementById("ward").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
-    };
+}
 
-    emailjs.send(
-        "service_v8bnap4",
-        "template_cro5pd6",
-        params
-    )
-    .then(function () {
-        document.getElementById("status").innerHTML =
-            "✅ మీ ఫిర్యాదు విజయవంతంగా పంపబడింది.";
 
-        document.getElementById("complaintForm").reset();
-    })
-.catch(function (error) {
-    console.log("EmailJS Error:", error);
+// ------------------------------------------
+// 4. DEATH REGISTRATION FORM
+// ------------------------------------------
 
-    document.getElementById("status").innerHTML =
-        "❌ Error: " + JSON.stringify(error);
-});
-// జనన నమోదు
-document.getElementById("birthForm")?.addEventListener("submit", function (e) {
-    e.preventDefault();
+const deathForm = document.getElementById("deathForm");
 
-    const params = {
-        child_name: document.getElementById("child_name").value,
-        dob: document.getElementById("dob").value,
-        father_name: document.getElementById("father_name").value,
-        mother_name: document.getElementById("mother_name").value,
-        mobile: document.getElementById("birth_mobile").value,
-        address: document.getElementById("address").value
-    };
+if (deathForm) {
 
-    emailjs.send(
-        "service_v8bnap4",
-        "template_2xnub3q"
-        params
-    ).then(function () {
-        document.getElementById("birthStatus").innerHTML =
-            "✅ జనన నమోదు దరఖాస్తు విజయవంతంగా పంపబడింది.";
-        document.getElementById("birthForm").reset();
-    }).catch(function (error) {
-        document.getElementById("birthStatus").innerHTML =
-            "❌ దరఖాస్తు పంపడంలో లోపం జరిగింది.";
-        console.log(error);
+    deathForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const status =
+            document.getElementById("deathStatus");
+
+
+        const templateParams = {
+
+            deceased_name:
+                document.getElementById("deceased_name").value,
+
+            death_date:
+                document.getElementById("death_date").value,
+
+            guardian_name:
+                document.getElementById("guardian_name").value,
+
+            age:
+                document.getElementById("age").value,
+
+            death_mobile:
+                document.getElementById("death_mobile").value,
+
+            death_address:
+                document.getElementById("death_address").value,
+
+            reason:
+                document.getElementById("reason").value
+
+        };
+
+
+        status.textContent =
+            "మరణ నమోదు దరఖాస్తు పంపబడుతోంది...";
+
+
+        /*
+        ==========================================
+        IMPORTANT
+        ==========================================
+
+        ఇక్కడ Death Registration Template ID
+        ఇంకా పెట్టలేదు.
+
+        EmailJSలో Death Template create చేసిన
+        తర్వాత:
+
+        "YOUR_DEATH_TEMPLATE_ID"
+
+        స్థానంలో ఆ Template ID పెట్టాలి.
+        ==========================================
+        */
+
+
+        emailjs.send(
+
+            "service_v8bnap4",
+
+            "YOUR_DEATH_TEMPLATE_ID",
+
+            templateParams
+
+        )
+
+        .then(function () {
+
+            status.textContent =
+                "✅ మరణ నమోదు దరఖాస్తు విజయవంతంగా పంపబడింది.";
+
+            deathForm.reset();
+
+        })
+
+        .catch(function (error) {
+
+            console.error("Death Registration Error:", error);
+
+            status.textContent =
+                "❌ మరణ నమోదు దరఖాస్తు పంపడంలో సమస్య వచ్చింది.";
+
+        });
+
     });
-});
 
-// మరణ నమోదు
-document.getElementById("deathForm")?.addEventListener("submit", function (e) {
-    e.preventDefault();
+}
 
-    const params = {
-        deceased_name: document.getElementById("deceased_name").value,
-        death_date: document.getElementById("death_date").value,
-        guardian_name: document.getElementById("guardian_name").value,
-        age: document.getElementById("age").value,
-        mobile: document.getElementById("death_mobile").value,
-        address: document.getElementById("death_address").value,
-        reason: document.getElementById("reason").value
-    };
 
-    emailjs.send(
-        "service_v8bnap4",
-        "YOUR_DEATH_TEMPLATE_ID",
-        params
-    ).then(function () {
-        document.getElementById("deathStatus").innerHTML =
-            "✅ మరణ నమోదు దరఖాస్తు విజయవంతంగా పంపబడింది.";
-        document.getElementById("deathForm").reset();
-    }).catch(function (error) {
-        document.getElementById("deathStatus").innerHTML =
-            "❌ దరఖాస్తు పంపడంలో లోపం జరిగింది.";
-        console.log(error);
+// ------------------------------------------
+// 5. GALLERY IMAGE CLICK
+// ------------------------------------------
+
+const galleryImages =
+    document.querySelectorAll(".gallery img");
+
+
+galleryImages.forEach(function (image) {
+
+    image.addEventListener("click", function () {
+
+        window.open(this.src, "_blank");
+
     });
-});        
+
+});
