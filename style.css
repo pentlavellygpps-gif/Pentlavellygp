@@ -133,3 +133,48 @@ footer{
   }
 
 }
+/* ప్రభుత్వ పథకాల విభాగం */
+
+#schemes {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+#schemes h2 {
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #0b6b3a;
+    color: white;
+    padding: 12px 18px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #004d26;
+}
